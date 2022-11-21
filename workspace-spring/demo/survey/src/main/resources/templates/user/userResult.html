@@ -1,0 +1,30 @@
+<html xmlns:th="http://www.thymeleaf.org">
+
+<body>
+
+    <h1>설문조사 답변 조회/수정</h1>
+
+    <table border="1">
+        <tr>
+            <th:block>
+                <td>이름</td>
+                <td>[[${userData.userName}]]</td>
+            </th:block>
+        </tr>
+        <tr>
+            <td  colspan="2" style="background-color:rgb(192, 192, 192)">답변 내용</td>
+        </tr>
+            <th:block th:each="answerN : ${answer}">
+        <tr>
+            <td colsapn="2"><span>[[${answerN}]]</span></td>
+        </tr>
+        </th:block>
+        </th:block>
+        </th:block>
+    </table>
+    </br>
+    <form action="result" method="post"><input type="submit" value="제출하기" /></form>
+
+</body>
+
+</html>

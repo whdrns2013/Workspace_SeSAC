@@ -1,0 +1,39 @@
+package kr.ac.practice.exam01;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class practice01 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		String a = "abcde";
+		System.out.println(a.indexOf("b"));
+		System.out.println(a.indexOf("g"));
+		
+		
+		
+		String REGEX = "([0-9]{2,3}-([0-9]{3,4}-[0-9]{4}))";
+		String INPUT = "My number is 010-1234-5678. touch me.";
+		
+		Pattern pattern = Pattern.compile(REGEX);
+		Matcher matcher = pattern.matcher(INPUT);
+		
+		System.out.println(pattern);
+		
+		if(matcher.find()) {
+			System.out.println(matcher.group());
+		}
+		
+		
+		
+//		boolean regex = Pattern.matches(pattern,  val);
+//		System.out.println(regex);
+		
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,27 @@
+package kr.ac.practice.exam01;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.InputMismatchException;
+import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class practice01 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+
+	String a = "admin";
+	System.out.println(a == "admin");
+		
+		
+		
+		
+	}
+
+	
+	
+	
+}

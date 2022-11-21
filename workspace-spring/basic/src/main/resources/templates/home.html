@@ -1,0 +1,36 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<body><h1>Home 입니다.</h1></body>
+
+<h1>구구단 자동생성 링크</h1>
+
+<th:blcok>
+<a th:each="number : ${#numbers.sequence(2,9)}" th:href="@{/gugudan(dan=${number})}">
+  구구단 2단 ~ [[${number}]]단 자동 생성 </br> </a>
+</th:blcok>
+
+<h1>구구단 자동생성 링크 : th:text사용</h1>
+
+<th:blcok>
+<a th:each="number : ${#numbers.sequence(2,9)}" th:href="@{/gugudan(dan=${number})}"
+  th:text="'구구단 2단 ~ ' + ${number} + '단 자동 생성'" br > </a>
+</th:blcok>
+
+</br>
+<h1>유저 리스트</h1>
+<a href="userList"> 유저 리스트 </a>
+</br>
+<a href="/sessionLogin">login3 로그인하기</a>
+</br>
+<a href="/sessionLogin">session 로그인하기</a>
+</br>
+<a href="/logout">로그아웃하기</a>
+
+
+
+
+
+
+
+
+</body>
+</html>

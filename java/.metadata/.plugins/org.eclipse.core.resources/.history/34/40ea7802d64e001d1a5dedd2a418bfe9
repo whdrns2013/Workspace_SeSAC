@@ -1,0 +1,26 @@
+package kr.ac.practice.exam01;
+
+import java.util.regex.Pattern;
+
+public class practice01 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		String a = "abcde";
+		System.out.println(a.indexOf("b"));
+		System.out.println(a.indexOf("g"));
+		
+		
+		String pattern = "^[0-9]*$";
+		String val = "123456789";
+		
+		boolean regex = Pattern.matches(pattern,  val);
+		System.out.println(regex);
+		
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.sessac.first.mapper.BoardMapper">
+        <!-- mapper가 있는 폴더 지정 -->
+    <select id="boardList" resultType="com.example.sessac.first.model.Board">
+        <!-- boardList을 통해 받아오며, 파라미터 타입을 지정 -->
+        select * from board
+    </select>
+
+    <insert id="boardCreate" parameterType="com.example.sessac.first.model.Board">
+        <!-- boardCreate을 통해 받아오며, 파라미터 타입을 지정 -->
+        insert into board values(NULL,#{boardTitle},#{boardContent},#{boardWritter})
+        <!-- board 라는 테이블에 values들(데이터들)을 집어넣는다. -->
+        <!-- boardNo 대신 Null을 넣어주는 이유 : 데이터베이스에서 increment(자동 오름차순 값 생성)으로 해줬기 때문 -->
+    </insert>
+
+    <update id="boardUpdate" parameterType="com.example.sessac.first.model.Board">
+        update board
+        set boardTitle=#{boardTitle}, boardContent=#{boardContent}
+        Where boardNo=#{boardNo}
+    </update>
+
+    <delete id="boardRemove" parameterType="int">
+        delete from board where boardNo=#{boardNo}
+    </delete>
+
+
+
+</mapper>

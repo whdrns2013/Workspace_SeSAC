@@ -1,0 +1,54 @@
+<!-- 파라미터 userId 값에 따라 해당하는 userId값과 동일한 유저정보만 출력 해봅시다.-->
+<html xmlns:th="http://www.thymeleaf.org">
+
+<body>
+<h1>if 문 활용</h1>
+
+<h3>기본출력 :</h3> 
+<span th:if = "${userId} == hong1" th:text="${memberList[0]}"></span>
+<span th:if = "${userId} == lee2" th:text="${memberList[1]}"></span>
+<span th:if = "${userId} == lim3" th:text="${memberList[2]}"></span>
+</br>
+<h3>이름 : </h3>
+<span th:if = "${userId} == hong1" th:text="${memberList[0].name}"></span>
+<span th:if = "${userId} == lee2" th:text="${memberList[1].name}"></span>
+<span th:if = "${userId} == lim3" th:text="${memberList[2].name}"></span>
+</br>
+<h3>아이디 : </h3>
+<span th:if = "${userId} == hong1" th:text="${memberList[0].userId}"></span>
+<span th:if = "${userId} == lee2" th:text="${memberList[1].userId}"></span>
+<span th:if = "${userId} == lim3" th:text="${memberList[2].userId}"></span>
+</br>
+<h3>비밀번호 : </h3>
+<span th:if = "${userId} == hong1" th:text="${memberList[0].userPassWord}"></span>
+<span th:if = "${userId} == lee2" th:text="${memberList[1].userPassWord}"></span>
+<span th:if = "${userId} == lim3" th:text="${memberList[2].userPassWord}"></span>
+
+
+<!-- <h1>표로 나타내기</h1>
+<table>
+    <tr>
+       <td>이름</td>
+       <td>아이디</td>
+       <td>비밀번호</td> 
+    </tr>
+    <tr>
+        <span th:each=(member : ${memberList})>
+            <td> <span th:text
+
+    </tr>
+</table> -->
+
+
+
+<h1>switch 문 활용</h1>
+
+<span th:switch = "${userId}">
+    <span th:case="hong1" th:text="${memberList[0]}"></span>
+    <span th:case="lee2" th:text="${memberList[1]}"></span>
+    <span th:case="lim3" th:text="${memberList[2]}"></span>
+</span>
+
+</tr>
+</body>
+</html>

@@ -1,0 +1,12 @@
+<html>
+<body>
+<h1>페이지 링크 걸기</h1>
+</hr>
+<th:block th:each = "pageNumber : ${#numbers.sequence(startPage,endPage)}">
+<span th:if="pageNumber == ${page}" th:text = "${page}" style="font-weight: bold;"> </span>
+<span><a th:unless= "pageNumber == ${page}" th:href="@{/linkUrl2(page=${pageNumber})}" th:text = "${pageNumber}"
+    style = "font-weight: bold; color: blue;"></a></span>
+
+</th:block>
+</body>
+</html>

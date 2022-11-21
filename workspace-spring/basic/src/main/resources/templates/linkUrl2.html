@@ -1,0 +1,14 @@
+<html>
+<body>
+
+<h1>페이지 링크 걸기</h1>
+
+</br>
+<th:block th:each = "pageNumber : ${#numbers.sequence(startPage,endPage)}">
+    <a th:if = "${page} == ${pageNumber}" th:text = "${pageNumber}"></a>
+    <a th:unless = "${page} == ${pageNumber}" th:href="@{/linkUrl2(page=${pageNumber})}" th:text="${pageNumber}"></a>
+</th:block>
+
+
+</body>
+</html>

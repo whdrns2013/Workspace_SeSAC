@@ -1,0 +1,26 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+    
+    
+<h1>
+<span th:if="${userId}==admin"> 관리자님 환영합니다.</span>
+<span th:unless="${userId}==admin">잘못된 접근입니다. 홈 화면으로 돌아가세요.</span>
+</h1>
+
+<hr>
+
+<h1>
+    <span th:switch="${userId}">
+    <span th:case="admin">관리자님 환영합니다.</span>
+    <span th:case="*">잘못된 접근입니다. 홈 화면으로 돌아가세요.</span>
+    </h1>
+</span>
+<hr>
+
+<h1>
+    <span th:text="${userId}==admin ? '관리자님 환영합니다.'
+    : '잘못된 접근입니다. 홈 화면으로 돌아가세요.'"></span>
+    </h1>
+
+</body>
+</html>

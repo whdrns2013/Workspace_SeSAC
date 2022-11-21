@@ -1,0 +1,33 @@
+<html>
+
+<body>
+
+    <table border="1">
+
+        <tr>
+            <td>글 번호</td>
+            <td>글 제목</td>
+            <td>작성자</td>
+        </tr>
+
+        <th:block th:if="${boardList} == null">
+            <tr>
+                <td colspan="3">게시글이 없습니다.</td>
+            </tr>
+        </th:block>
+
+        <th:block th:unless="${boardList} != null">
+            <th:block th:each="board : ${boardList}">
+                <tr>
+                    <td> [[${board.boardNo}]]</td>
+                    <td> [[${board.boardTitle}]]</td>
+                    <td> [[${board.boardWritter}]]</td>
+                </tr>
+            </th:block>
+        </th:block>
+    </tabel>
+<a href="/createBoard"><input type="button" value="글쓰기"></a>
+
+</body>
+
+</html>

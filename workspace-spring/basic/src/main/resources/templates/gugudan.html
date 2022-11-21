@@ -1,0 +1,9 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<th:block>
+    <p th:if = "${session.user}!=null"
+       th:text = "${session.user.id}+ '님 반갑습니다.'"></p>
+</th:block>
+<h2>[[${result}]]</h2>
+</body>
+</html>

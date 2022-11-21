@@ -1,0 +1,41 @@
+<html><body>
+
+</br>
+</br>
+</br>
+</br>
+<p align="center" style="font-size:40;">정보 입력</p>
+<p align="center">조사에 응해주시는 분의 정보를 입력해주세요.</p>
+<p align="center">아이디와 비밀번호는 설문 종료 후 결고 조회에도 쓰이니</p>
+<p align="center">꼭 기억해주시기 바랍니다. </p>
+</br>
+
+<form action="/user/join" method="post">
+    <table border="1px solid-black" style="margin-left:auto;margin-right:auto">
+       <tr>
+       <td style="background-color:rgb(202, 202, 202)">아이디</td>
+       <td style="background-color:rgb(202, 202, 202)">비밀번호</td>
+       <td style="background-color:rgb(202, 202, 202)">이름</td>
+       </tr>
+       <tr>
+       <td><input type="text" placeholder="아이디" name="userId"></td>
+       <td><input type="password" placeholder="비밀번호" name="userPw"></td>
+       <td><input type="text" placeholder="이름" name="userName"></td>
+       </tr>
+       <tr>
+        <td style="background-color:rgb(202, 202, 202)">생년월일</td>
+        <td style="background-color:rgb(202, 202, 202)">성별</td>
+        <td style="background-color:rgb(202, 202, 202)">제출</td>
+       </tr>
+       <tr>
+       <td><input type="date" placeholder="생년월일" name="birthDate"></td>
+       <td>남성 : <input type="radio" name="sexMale">여성 : <input type="radio" name="sexFemale"></td>
+       <td><input type="submit" value="제출"></td>
+       </tr>
+    </table>
+</form>
+
+
+
+</form>
+</body></html>

@@ -1,0 +1,21 @@
+package kr.ac.practice.exam01;
+
+public class practice01 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		String a = "abcde";
+		System.out.println(a.indexOf("b"));
+		System.out.println(a.indexOf("g"));
+		
+		
+		String pattern = "^[0-9]*$";
+		System.out.println(pattern);
+		
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,33 @@
+<html xmlns:th="http://www.thymeleaf.org">
+
+<body>
+
+<h1> 타임리프 조건문 활용 </h1>>
+
+관리자 이름 :
+<span th:if = "${name}!=null" th:text="${name}"></span>
+<span th:unless = "${name}!=null" th:text="이름없음"></span>
+<!-- <span th:unless = "${name}==null" 로 적어도 됨-->
+<!-- if와 unless 조건문-->
+
+</br>
+
+권한 : 
+<span th:text="${auth} != null ? ${auth} : '권한없음'"></span>
+<!-- 삼항 연산자 사용 가능-->
+
+</br>
+
+담당 카테고리 : 
+<span th:switch="${category}">
+    <span th:case="1">커뮤니티</span>
+    <span th:case="2">장터</span>
+    <span th:case="3">갤러리</span>
+</span>
+<!-- Switch문 활용 -->
+<!-- 감싸는 태그에 -- th:switch=${데이터이름}-->
+<!-- 감싸는 태그 안쪽에 case문을 활용한다. -- th:case-->
+
+</body>
+
+</html>

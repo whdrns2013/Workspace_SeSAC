@@ -1,0 +1,24 @@
+<html xmlns:th="http://www.thymeleaf.org">
+
+<body>
+
+    <table border="1">
+        <tr>
+            <td>번호</td>
+            <td>제목</td>
+            <td>작성자</td>
+        </tr>
+
+            <td th:text="${result.bNo}"></td>
+            <td th:text="${result.title}"></td>
+            <td th:text="${result.user}"></td>
+        </tr>
+    </table>
+
+    <th:block th:each="pageNumber : ${#numbers.sequence(1, 10)}">
+<a th:href="@{/linkUrl(page=${pageNumber})}" th:text="${pageNumber}"></a>
+</th:block>
+<hr>
+</body>
+
+</html>

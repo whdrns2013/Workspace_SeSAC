@@ -1,0 +1,25 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+
+<!-- Thymeleaf 표현하는 방법 3 가지-->
+
+<!--열리는 태그와 닫히는 태그 사이에 데이터 출력-->
+아 이 디 : <span>[[${user.userId}]]</span></body>br>
+이    름 : <span>[[${user.userName}]]</span></body>br>
+비밀번호 : <span>[[${user.userPw}]]</span></body>br>
+<hr/>
+
+<!--열리는 태그에 th:속성 으로 표현-->
+아 이 디 : <span th:text="${user.userId}">[[${user.userId}]]</span>br>
+이    름 : <span th:text="${user.userName}">[[${user.userName}]]</span>br>
+비밀번호 : <span th:text="${usuer.userPw}">[[${user.userPw}]]</span>br>
+<hr/>
+
+<!--열리는 태그에 data-th-속셩명="값"으로 표현-->
+아 이 디 : <span data-th-text="${user.userId}">[[${user.userId}]]</span>br>
+이    름 : <span data-th-text="${user.userName}">[[${user.userName}]]</span>br>
+비밀번호 : <span data-th-text="${usuer.userPw}">[[${user.userPw}]]</span>br>
+
+
+</body>
+</html>

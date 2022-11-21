@@ -1,0 +1,21 @@
+<html xmlns:th="http://www.thymeleaf.org">
+
+<body>
+    <h1>로그인 post 메서드 테스트</h1>
+    <hr/>
+
+    <!--input 태그 : 사용자로부터 입력을 받을 수 있는 태그-->
+    <!-- <input type="text" placeholder="아이디"/>
+    <input type="text" placeholder="비밀번호"/> -->
+
+    <!--form태그 : url요청을 함과 동시에 동시에 메서드 타입도 같이 지정할 수 있다.-->
+    <form action="/login3" method="post">
+        <input type="text" placeholder="아이디" name="id"/>
+        <input type="password" placeholder="비밀번호" name="pw"/>
+        <input type="submit" value="로그인"/>
+    </form>
+
+
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<html xmlns:th="http://www.thymeleaf.org">
+
+<body>
+
+    <table border="1">
+<!--굵기 1짜리 테이블을 만들고-->
+        <tr>
+            <td>이름</td>
+            <td>아이디</td>
+            <td>비밀번호</td>
+        </tr>
+<!--가장 첫 row에 3개의 column을 만든 후, 이름, 아이디, 비밀번호라고 이름 붙임-->
+
+
+        <tr th:each="member : ${userList}">  <!--멤버라는 이름의 변수를 memverList로부터 받아오겠다 : 향상된 for문과 같은 형식-->
+            <td th:text="${member.name}"></td>
+            <td><a th:href="@{member(userId=${member.userId})}" >[[${member.userId}]]</td>
+            <td th:text="${member.userPassWord}"></td>
+        </tr>
+<!--타임리프 iteration (향상된 for문과 비슷)을 이용해-->
+<!--memberList로부터 돌면서 각 변수를 member라는 변수로 받아온다.-->
+<!--이후, 각 column에 userName, userId, userPw를 넣어준다.-->
+    </table>
+<hr>
+</body>
+
+</html>

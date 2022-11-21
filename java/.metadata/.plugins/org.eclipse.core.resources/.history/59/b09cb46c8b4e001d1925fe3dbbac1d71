@@ -1,0 +1,24 @@
+package kr.ac.sesac.exam07;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+
+public class ErrorExam_sonagi {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		BufferedReader reader = new BufferedReader(new FileReader("data/소나기.txt"));
+		String text = "";
+		while (true) {
+			String data = reader.readLine();
+			if (data == null)
+				break;
+			text += data + "\n";
+		}
+		reader.close();
+		System.out.println(text);
+
+	}
+
+}

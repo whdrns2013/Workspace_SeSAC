@@ -1,0 +1,8 @@
+<html>
+<body>
+<th:block th:each = "pageNumber : ${#numbers.sequence(startPage,endPage)}">
+<span th:if = "${pageNumber} == ${page}" th:text = "${pageNumber}"style = "font-weight: bold; color:blue;"></span>
+<span th:unless = "${pageNumber} == ${page}" th:text = "${pageNumber}"style = "color:red;"></span>
+</th:block>
+</body>
+</html>

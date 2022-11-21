@@ -1,0 +1,14 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<span th:switch="${id}">
+    <span th:case="admin">
+        <span th switch="${pw}">
+            <span th:case="1234">로그인에 성공하였습니다.</span>
+            <span th:case="*">비밀번호를 확인해주세요.</span>
+        </span>
+    </span th:case="*"> 아이디를 확인해주세요.</span>
+</span>
+</body>
+</html>
+
+<!-- switch 문 이중 된다고 하는데, 어떻게 하는거지?-->

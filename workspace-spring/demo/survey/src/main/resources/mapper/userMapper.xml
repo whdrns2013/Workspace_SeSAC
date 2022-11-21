@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.miniprojectsurvey.survey.mapper.UserMapper">
+
+    <insert id="join" parameterType="com.example.miniprojectsurvey.survey.model.User">
+    insert into user values(#{userId}, #{userPw}, #{userName}, #{sexMale}, #{sexFemale}, #{birthDate})
+    </insert>
+
+    <select id="select" parameterType="String" resultType="com.example.miniprojectsurvey.survey.model.User">
+    select * from user where userId = #{id}
+    </select>
+
+    <select id="getUserPw" parameterType="String" resultType="String">
+    select userPw from user where userId = #{id}
+    </select>
+
+    <select id="getUserName" parameterType="String" resultType="String">
+        select userName from user where userId = #{id}
+        </select>
+
+    <select id="selectAll" resultType="com.example.miniprojectsurvey.survey.model.User">
+        select * from user
+    </select>
+
+    </mapper>

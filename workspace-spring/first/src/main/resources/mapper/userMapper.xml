@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.sessac.first.mapper.UserMapper">
+        <!-- mapper가 있는 폴더 지정 -->
+    <insert id="join" parameterType="com.example.sessac.first.model.User">
+        <!-- join을 통해 받아오며, 파라미터 타입을 지정 -->
+        insert into user values(#{userId},#{userPw},#{userName},#{userAddr})
+        <!-- user 라는 테이블에 values들(데이터들)을 집어넣는다. -->
+    </insert>
+
+    <select id="getPw" parameterType="String" resultType="String">
+        select userPw
+        from user
+        where userId=#{userId}
+    </select>
+
+    <select id="selectUser" parameterType="String" resultType="com.example.sessac.first.model.User">
+        select *
+        from user
+        where userId=#{userId}
+    </select>
+
+</mapper>

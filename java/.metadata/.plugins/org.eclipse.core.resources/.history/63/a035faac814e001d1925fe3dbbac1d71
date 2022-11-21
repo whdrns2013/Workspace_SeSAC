@@ -1,0 +1,10 @@
+package kr.ac.sesac.exam07;
+
+public class ErrorExam01_If {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
