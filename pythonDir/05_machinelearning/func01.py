@@ -52,3 +52,19 @@ def visualize_boundary(model, X, y):
                            levels=np.arange(n_classes + 1) - 0.5,
                            cmap='rainbow', clim=(y.min(), y.max()),
                            zorder=1)
+    
+def get_clf_eval(y_test, pred,pred_proba_1):
+    from sklearn.metrics import accuracy_score
+    from sklearn.metrics import precision_score, recall_score
+    from sklearn.metrics import confusion_matrix, f1_score, roc_auc_score
+
+    confusion = confusion_matrix(y_test, pred)
+    accuracy = accuracy_score(y_test, pred)
+    precision = precision_score(y_test, pred)
+    recall = recall_score(y_test, pred)
+    f1 = f1_score(y_test,pred)
+    auc = roc_auc_score(y_test,pred)
+    print("==오차행렬==")
+    print(confusion, '\n')
+    print("==Score==")
+    print(f'정확도 : {accuracy:.4f}, 정밀도 : {precision:.4f}, 재현율 : {recall:.4f}, F1:{f1:.4f}, AUC:{auc:.4f}')
