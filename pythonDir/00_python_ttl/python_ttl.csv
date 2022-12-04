@@ -1,0 +1,15 @@
+﻿언어,코드,구분,설명,주요 파라미터,기본 문법,중요도,예시,예시 설명,라이브러리
+python,tqdm(),코드,"iterable 대상에 대해 진행률을 표시. for문 In range(100)의 경우, for문이 다음단계로 넘어감에 따라 1%씩 진행도 증가","* iterable : 반복자 개체
+* desc = str : 해당 str 뒤에 진행률 바를 표시함",,,,,from tqdm.notebook import tqdm
+python,,,,,,,,,
+python,,,,,,,,,
+python,,,,,,,,,
+python,,,,,,,,,
+python,,,,,,,,,
+python,,,,,,,,,
+python,,,,,,,,,
+python,,,,,,,,,
+python,,,,,,,,,
+python,,,,,,,,,
+python,,,,,,,,,
+python,,,,,,,,,
