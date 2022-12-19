@@ -1,0 +1,5 @@
+* 제출 참고
+sample_submission와 같이
+
+(1) Zip 파일 형식이어야 합니다.
+(2) 압축파일명은 sample_submission 입니다.
