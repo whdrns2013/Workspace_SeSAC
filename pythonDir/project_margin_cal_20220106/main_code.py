@@ -15,10 +15,11 @@ class shop_info:
         self.logis_price = logis_price
         self.cat = cat
     
-    def margin_calculate(self, sale_price, pur_price):
+    def margin_calculate(self, sale_price, pur_price, logis_earn):
         margin = sale_price - pur_price - (self.commision_rate * sale_price / 100) - (self.logis_price * (1 if self.logis_policy == "무료배송" else 0))
         margin_per_sale = margin / sale_price
         margin_per_pur = margin / pur_price
+        logis_earn #배송비매출을 이용한 거 넣기 필요
         return margin, margin_per_sale, margin_per_pur
 
 
