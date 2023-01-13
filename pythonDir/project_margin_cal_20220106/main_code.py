@@ -23,7 +23,8 @@ class shop_info:
         logis_earn : 구매자로부터 받는 배송비 결제액
         '''
 
-        margin = sale_price - pur_price - (self.commision_rate * sale_price / 100) - + logis_earn + (self.logis_price * (1 if self.logis_policy == "무료배송" else 0))
+        margin = sale_price - pur_price - (self.commision_rate * sale_price / 100) + logis_earn - \
+            (self.logis_price * (1 if self.logis_policy == "무료배송" else 0))
         margin_per_sale = margin / sale_price
         margin_per_pur = margin / pur_price
         return margin, margin_per_sale, margin_per_pur
