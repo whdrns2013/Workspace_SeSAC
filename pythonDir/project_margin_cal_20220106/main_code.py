@@ -1,7 +1,7 @@
 class shop_info:
 
     def __init__(self, shop_name, commision_rate=None,
-                logis_policy=None, logis_price=None, cat=None):
+                logis_policy=None, logis_price=None, cat=None,):
         '''변수 설명
         shop_name = 쇼핑몰 명
         commision_rate = 수수료율
@@ -16,10 +16,16 @@ class shop_info:
         self.cat = cat
     
     def margin_calculate(self, sale_price, pur_price, logis_earn):
-        margin = sale_price - pur_price - (self.commision_rate * sale_price / 100) - (self.logis_price * (1 if self.logis_policy == "무료배송" else 0))
+
+        '''
+        sale_price : 판매가
+        pur_price : 매입가
+        logis_earn : 구매자로부터 받는 배송비 결제액
+        '''
+
+        margin = sale_price - pur_price - (self.commision_rate * sale_price / 100) - + logis_earn + (self.logis_price * (1 if self.logis_policy == "무료배송" else 0))
         margin_per_sale = margin / sale_price
         margin_per_pur = margin / pur_price
-        logis_earn #배송비매출을 이용한 거 넣기 필요
         return margin, margin_per_sale, margin_per_pur
 
 
@@ -27,6 +33,13 @@ class shop_info:
 class user_info:
 
     def __init__(self, user_id, user_name=None, business_type=None):
+
+        '''
+        user_id : 유저 id
+        user_name : 유저명
+        business_type : 사업자 구분 (법인, 개인, 영세...)
+        '''
+
         self.user_id = user_id
         self.user_name = user_name
         self.business_type = business_type
