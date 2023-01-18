@@ -24,6 +24,7 @@ MAX_SEQUENCE = 25 # 최대 25개 단어까지만 사용하겠다.
 #데이터 불러오기
 def load_data(path):
     data_df = pd.read_csv(path, header=0) # header = 0 : 제목행 불러오지 않기
+    data_df = data_df[:120] # 120개만 추출 (실제로 할 때에는 없애도 됨)
     question, answer = list(data_df['Q']), list(data_df['A'])
     return question, answer
 
