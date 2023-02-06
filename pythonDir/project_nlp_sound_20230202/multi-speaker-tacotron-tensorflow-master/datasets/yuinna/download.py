@@ -5,7 +5,7 @@ import argparse
 import requests
 from bs4 import BeautifulSoup
 from functools import partial
-
+sys.path.append(os.path.dirname(os.path.abspath(os.path.dirname(__file__))))
 from utils import download_with_url, makedirs, parallel_run
 
 base_path = os.path.dirname(os.path.realpath(__file__))

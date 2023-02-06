@@ -7,7 +7,7 @@ import requests
 import subprocess
 from functools import partial
 from bs4 import BeautifulSoup
-
+sys.path.append(os.path.dirname(os.path.abspath(os.path.dirname(__file__))))
 from utils import get_encoder_name, parallel_run, makedirs
 
 API_URL = 'http://api.jtbc.joins.com/ad/pre/NV10173083'
