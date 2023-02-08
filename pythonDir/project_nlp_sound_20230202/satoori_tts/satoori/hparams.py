@@ -10,18 +10,21 @@ class hparams:
 	################################
 	# Audio                        #
 	################################
+ 
 	num_mels = 80
 	sample_rate = 22050
 	n_fft = 2048
 	win_length = 1024
 	hop_length = 256
 	window = 'hann'
+ 
 	fmin = 50
 	fmax = 11000
 	max_level_db = 100
 	min_level_db = -100
 	ref_level_db = 20
 	gl_iters = 16
+ 
 	# num_mels = 80
 	# num_freq = 1025
 	# sample_rate = 22050

@@ -14,8 +14,10 @@ hyperparameter. Some cleaners are English-specific. You'll typically want to use
 
 import re
 from unidecode import unidecode
-from .numbers import normalize_numbers
+# from numbers import normalize_numbers
+from numbers_ import normalize_numbers
 from jamo import hangul_to_jamo
+
 
 # Regular expression matching whitespace:
 _whitespace_re = re.compile(r'\s+')
