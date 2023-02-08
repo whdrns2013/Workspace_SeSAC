@@ -2,9 +2,20 @@
 ##      사용환경        ##
 #########################
 
-# 파이썬 3.8.15
-# tensorflow
+# 폴더에 [satoori.yaml] 파일로 env 만들어놨습니다. 고거 사용해주세요.
+# 가상환경 생성 명령어(prompt) : $conda env create --file satoori.yaml
 
+# 파이썬 3.8.15
+# flask 2.2.2 ::: conda install flask            [satoori_flask.py]
+# torch 1.12.1 ::: conda install pytorch
+# soundfile 0.11.0 ::: pip install soundfile
+# unidecode 1.2.0 ::: conda install unidecode    [cleaners.py]
+# inflect 5.3.0 ::: conda install inflect        [numbers.py]
+# jamo 0.4.1 ::: pip install jamo                [cleaners.py]
+# tensorflow 2.10.0 ::: conda install tensorflow [audio.py]
+# librosa 0.9.2 ::: pip install librosa          [audio.py]
+# chardet 4.0.0 ::: conda install chardet        [audio.py]
+# torchaudio 1.12.1 ::: pip install torchaudio   [audio.py]
 
 
 #########################
@@ -121,7 +132,7 @@ def inference(text, model_path_ac, model_path_vo):
 
     return '/static/temp.wav'
 
-
+inference('안녕하소', str(ckpt_path + 'jeon_acoustic.ckpt'), str(ckpt_path + 'jeon_vocoder.ckpt'))
 
 # flask 인덱스 페이지 : 지역 선택, 텍스트 선택
 @app.route('/')
