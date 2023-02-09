@@ -2,38 +2,51 @@
 
 한국 5개 지역의 사투리로 말하는 인공지능. Tacotron2 기반.
 
-## 합성 결과 예시
+#########################
+##      사용환경        ##
+#########################
 
-```
-헬로월드! 유튜브 빵형의 개발도상국에 어서오세요!
-```
+# [satoori.yaml] 파일로 env 만들어놨습니다. 이용해서 가상환경을 만들어주세요.
+# 가상환경 생성 명령어(prompt) : $conda env create --file satoori.yaml
+# 본 프로젝트는 satoori 가상환경 하에서 작동이 가능합니다.
 
-- [강원도](https://voca.ro/1aHL8s0MHxz4)
-- [제주도](https://voca.ro/1glI7LP1Dd2c)
-- [충청도](https://voca.ro/120EqSRyJH25)
-- [경상도](https://voca.ro/1hRzziA4c8D9)
-- [전라도](https://voca.ro/1mQbP19vCs2l)
+# 파이썬 3.8.15
+# flask 2.2.2 ::: conda install flask            [satoori_flask.py]
+# torch 1.12.1 ::: conda install pytorch         [satoori_flask.py]
+# soundfile 0.11.0 ::: pip install soundfile     [satoori_flask.py]
+# unidecode 1.2.0 ::: conda install unidecode    [cleaners.py]
+# inflect 5.3.0 ::: conda install inflect        [numbers.py]
+# jamo 0.4.1 ::: pip install jamo                [cleaners.py]
+# tensorflow 2.10.0 ::: conda install tensorflow [audio.py]
+# librosa 0.9.2 ::: pip install librosa          [audio.py]
+# chardet 4.0.0 ::: conda install chardet        [audio.py]
+# torchaudio 1.12.1 ::: pip install torchaudio   [audio.py]
 
-## 데이터셋
 
-[AI허브 - 한국어 방언 발화 데이터셋](https://www.aihub.or.kr/aihubdata/data/list.do?pageIndex=1&currMenu=115&topMenu=100&dataSetSn=&srchdataClCode=DATACL001&srchOrder=&SrchdataClCode=DATACL002&searchKeyword=%ED%95%9C%EA%B5%AD%EC%96%B4+%EB%B0%A9%EC%96%B8&srchDataRealmCode=REALM002&srchDataTy=DATA004)
+#########################
+##    사용 전 준비      ##
+#########################
 
-## 사전 학습 모델 다운로드
+## (1) 폴더 생성
+## logs 폴더를 만들어주세요. logs 폴더 안에 models 폴더를 만들어주세요.
+## static폴더와 templates 폴더를 만들어주세요. templates 폴더 안에는 index 페이지와 result 페이지가 위치합니다.
 
-![](imgs/01.png)
+## (2) 체크포인트 파일 위치
+## models 폴더 안에 지역별 체크포인트 파일 (acoustic, vocoder) 을 위치시켜주세요.
+## 체크포인트 파일의 이름은 아래와 같습니다.
+## 전라도 : jeon_acoustic.ckpt, jeon_vocoder.ckpt
+## 경상도 : gyeong_acoustic.ckpt, gyeong_vocoder.ckpt
+## 강원도 : kang_acoustic.ckpt, kang_vocoder.ckpt
+## 제주도 : jeju_acoustic.ckpt, jeju_vocoder.ckpt
+## 충청도 : chung_acoustic.ckpt, chung_vocoder.ckpt
 
-1. AI허브 회원가입 - 데이터셋 상세 페이지 - 활용 AI 모델 및 코드 - AI 모델 다운로드
 
-2. 압축 해제 - 03.AI모델 - 1. Binary File - 음성합성 - `acoustic.ckpt`, `vocoder.ckpt`
+#########################
+##      사용 방법       ##
+#########################
 
-3. `logs/model` 폴더 저장
-
-## 테스트 코드
-
-[test.ipynb](test.ipynb)
-
-## 제작지원
-
-- [AI허브](https://www.aihub.or.kr)
-- [NIA 한국정보화진흥원](https://www.nia.or.kr/)
-- [유튜브 빵형의 개발도상국](https://www.youtube.com/channel/UC9PB9nKYqKEx_N3KM-JVTpg)
+## satoori_flask.py 파일을 실행시켜주세요.
+## 브라우저를 통해 서비스 페이지로 접속해주세요. 기본 주소는 [localhost:5002] 입니다.
+## 방언 지역을 선택한 후, 음성으로 변환할 텍스트를 입력해주세요.
+## 변환 작업에는 시간이 소요됩니다. 텍스트 길이에 비례해 시간이 소요되니 참고해주세요.
+## 변환이 완료되면 result 페이지로 넘어가면서 음성을 재생할 수 있습니다.
