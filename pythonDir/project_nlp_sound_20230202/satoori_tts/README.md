@@ -21,6 +21,7 @@
 # librosa 0.9.2 ::: pip install librosa          [audio.py]
 # chardet 4.0.0 ::: conda install chardet        [audio.py]
 # torchaudio 1.12.1 ::: pip install torchaudio   [audio.py]
+# matplotlib 3.6.2 ::: conda install matplotlib  [satoori_flask.py]
 
 
 #########################

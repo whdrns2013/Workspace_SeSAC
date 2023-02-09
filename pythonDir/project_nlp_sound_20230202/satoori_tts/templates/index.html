@@ -2,7 +2,8 @@
 <head></head>
 <body>
 
-<p align='center'><h1> 사투리 TTS </h1></p>
+
+<h1> 사투리 TTS </h1>
 
 
 <br>
@@ -10,7 +11,8 @@
 
 <form action='http://localhost:5002/result' method='get'>
 
-지역 선택 : <select name='region'>
+<h3>지역 선택</h3>
+<select name='region'>
     <option value="">지역 선택</option>
     <option value="전라도">전라도</option>
     <option value="경상도">경상도</option>
@@ -20,18 +22,20 @@
 </select>
 
 <br>
-텍스트 입력
 <br>
-<textarea name='text' row='150' cols='70'></textarea>
+<h3>텍스트 입력</h3>
+
+<textarea name='text' rows='20' cols='70'></textarea>
 
 <br>
-txt 파일 업로드 : <input type='file' name='file'>
+<br>
+<!--txt 파일 <input type='file' name='file'>-->
 
-<br>
-<br>
-<input type='submit'></input>
+<input type='submit' value="음성으로 변환하기"></input>
 
 </form>
+
+
 
 </body>
 </html>
