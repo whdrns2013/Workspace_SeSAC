@@ -32,13 +32,15 @@
 ## static폴더와 templates 폴더를 만들어주세요. templates 폴더 안에는 index 페이지와 result 페이지가 위치합니다.
 
 ## (2) 체크포인트 파일 위치
-## models 폴더 안에 지역별 체크포인트 파일 (acoustic, vocoder) 을 위치시켜주세요.
+## 위에서 만든 models 폴더 안에 지역별 체크포인트 파일 (acoustic, vocoder) 을 위치시켜주세요.
+## 다운로드 : https://drive.google.com/drive/folders/1qWilcW4f3CF4cwKvU1Sx4pyz-VJgrMfC
 ## 체크포인트 파일의 이름은 아래와 같습니다.
 ## 전라도 : jeon_acoustic.ckpt, jeon_vocoder.ckpt
 ## 경상도 : gyeong_acoustic.ckpt, gyeong_vocoder.ckpt
 ## 강원도 : kang_acoustic.ckpt, kang_vocoder.ckpt
 ## 제주도 : jeju_acoustic.ckpt, jeju_vocoder.ckpt
 ## 충청도 : chung_acoustic.ckpt, chung_vocoder.ckpt
+## ! 파일들을 '꺼내서' 위치시켜주세요 !
 
 
 #########################
