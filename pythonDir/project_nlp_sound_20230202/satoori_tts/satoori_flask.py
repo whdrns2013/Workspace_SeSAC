@@ -23,6 +23,8 @@ wavfile_name = 'temp.wav'
 ## 음성 설정
 sample_rate_list = [18000, 22050, 20000, 20000, 22050]
 amp_list = [1, 1, 1, 1, 1]
+# ip address
+ip = '192.168.10.25'
 
 
 
@@ -123,6 +125,7 @@ def result():
     global sample_rate_list  # 지역별 샘플레이트
     global amp_list     # 음량
     global dir_path     # 기본 경로
+    global ip
     
     # 방언 지역 선택 및 ckpt 파일 선택 부
     region = request.args.get('region')      # 사용자가 web 통해 선택한 지역 정보 받아오기
@@ -172,7 +175,7 @@ def result():
 
 
     return render_template('result.html', audiofile = result, text = text, cleaned_text = cleaned_text, sequence = sequence,
-    mel = '/static/mel.png')
+    mel = '/static/mel.png', ip = ip)
 
 
 # flask 파일 전송 부 : 미사용
@@ -183,4 +186,4 @@ def wav(filename):
 
 
 # flask 서버 구동
-app.run(host = 'localhost', port = 5002)
+app.run(host = ip, port = 5002)
