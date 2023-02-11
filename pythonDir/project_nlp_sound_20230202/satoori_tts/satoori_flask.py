@@ -24,7 +24,7 @@ wavfile_name = 'temp.wav'
 sample_rate_list = [18000, 22050, 20000, 20000, 22050]
 amp_list = [1, 1, 1, 1, 1]
 # ip address
-ip = '192.168.10.25'
+ip = 'localhost'
 
 
 
