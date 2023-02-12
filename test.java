@@ -2,13 +2,13 @@ public class test {
  
     public static void main(String[] args){
 
-        int a = 2_147_483_647;
-        long b = 1012305102804812L;
-        int c = -2_147_483_648;
-        // byte d = 1242;
+        int big = 1000;
+        byte small;
 
-        System.out.println(c-1);
-
+        small = (byte)big;
+        System.out.println(small);
+        // System.out.println(((object)small).getClass().getName());
+        // System.out.println(big.class);
 
     }
 

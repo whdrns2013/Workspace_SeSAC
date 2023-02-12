@@ -54,6 +54,7 @@ public class Ex02 {
 		
 		System.out.println(big);
 		System.out.println(small2);
+
 		
 	}
 
