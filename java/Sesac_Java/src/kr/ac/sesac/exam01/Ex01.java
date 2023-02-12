@@ -1,4 +1,5 @@
 // 본 패키지는 강사님이 작성한 패키지입니다.
+// 블로그 업로드 완료
 
 package kr.ac.sesac.exam01;
 
@@ -39,6 +40,20 @@ public class Ex01 {
 		// 기존의 num의 값인 1은 사라짐
 		num = num2;
 		System.out.println("num : "+num);
+
+
+		double a = 3.14;
+		int b = 314;
+		System.out.printf("원주율을 소수점 둘째자리까지 반올림하면 %f, 100을 곱하면 %d 입니다.", a, b);
+		// ==> 원주율을 소수점 둘째자리까지 반올림하면 3.14, 100을 곱하면 314입니다.
+
+
+		String s = "안녕하세요. 반갑습니다.";
+		char c = 'a';
+		System.out.printf("%s 호출명은 다음과 같습니다. %c", s, c);
+		// ==> 안녕하세요. 반갑습니다. 호출명은 다음과 같습니다. c
+
+
 	}
 
 }
