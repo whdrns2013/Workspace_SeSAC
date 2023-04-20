@@ -187,7 +187,7 @@
 
 |팀원 1|팀원 2|팀원 3|팀원 4|팀원 5|팀원 6|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|<center><strong>박종혁(팀장)</strong><br>* 이중 출력 모델 구축</center>|<strong>문병찬</strong><br>* Data Augment|<strong>진솔</strong><br>* 단일 출력 모델 구축|<strong>김성민</strong><br>* ResNet 전이 학습|<strong>손원준</strong><br>* 데이터수집<br>* 프로젝트 관리<br>* normalization|<strong>박기현</strong><br>* 이중 출력 모델 구축<br>* ResNet 전이 학습|
+|<center><strong>박종혁(팀장)</strong><br>* 이중 출력 모델 구축</center>|<strong>문병찬</strong><br>* Data Augment|<strong>진솔</strong><br>* 단일 출력 모델 구축|<strong>김성민</strong><br>* ResNet 전이 학습|<strong>손원준</strong><br>* 데이터수집<br>* 프로젝트 관리<br>* normalization|<strong>박기현</strong><br>* 이중 출력 모델 구축<br>* Callback 함수 적용|
 |whdrns2013@naver.com<br>[블로그](https://whdrns2013.github.io/)<br>[깃허브](https://github.com/whdrns2013/)||||||
 
 <br>
