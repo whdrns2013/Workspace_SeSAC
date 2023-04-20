@@ -46,7 +46,7 @@
 ### 📁 함께 보면 좋을 자료  
 
 * 발표자료 : [발표자료.pdf](./presentation.pdf)  
-* 프로젝트 계획서 : [프로젝트 계획서.xlsx](./src/pm/plan.hwp)  
+* 프로젝트 계획서 : [프로젝트 계획서.hwp](./src/pm/plan.hwp)  
 
 <br>
 <br>
@@ -66,7 +66,7 @@
 ## 3. Train / Test / Inference  
 
 [단일 출력 모델](./model/single_output_model_jinsol.ipynb)  
-[이중 출력 모델 1](./model/double_output_model_jonghyuk.ipynb)  
+[이중 출력 모델 1](./model/double_output_model_parkjonghyuk.ipynb)  
 [이중 출력 모델 CNN](./model/double_output_model_parkgihyean.ipynb)  
 [전이학습 Resnetv2](./model/transfer_resnetv2_sungmin_aug_2_w_gihyeon.ipynb)  
 
