@@ -149,7 +149,7 @@
 <details>
 <summary> 모델 도식 펼치기 / 접기 </summary>
 <div markdown='1'>
-<image src = "./src/images/model_resnet_01.png)"/>
+<image src = "./src/images/model_resnet_01.png"/>
 </div>
 </details>
 
