@@ -1,0 +1,21 @@
+### 자료
+(1) 미세먼지 pm10
+https://kosis.kr/statHtml/statHtml.do?orgId=106&tblId=DT_106N_03_0200045
+
+(2) 미세먼지 pm2.5
+https://kosis.kr/statHtml/statHtml.do?orgId=106&tblId=DT_106N_03_0200145&conn_path=I2
+
+(3) 행정구역별 인구수
+https://kosis.kr/statHtml/statHtml.do?orgId=101&tblId=DT_1B040A3&vw_cd=MT_ZTITLE&list_id=A_7&scrId=&seqNo=&lang_mode=ko&obj_var_id=&itm_id=&conn_path=MT_ZTITLE&path=%252FstatisticsList%252FstatisticsListIndex.do
+
+(4) 시도별 전체 중증 암 등록환자의 암유형별 등록인원 현황
+https://kosis.kr/statHtml/statHtml.do?orgId=350&tblId=DT_35001_A090
+
+(5) 광역시도 경계 GeoJson
+http://www.gisdeveloper.co.kr/?p=2332
+
+(6) SVH -> JSON
+https://mapshaper.org/
+
+### 공통사항
+(1) 세종시 = 충남
