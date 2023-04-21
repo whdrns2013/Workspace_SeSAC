@@ -1,0 +1,77 @@
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+</head>
+
+<body>
+    <h1>- 게시글 수정 -</h1>
+    <th:block>
+    <form action="/survey/correction" method="post">
+        <input hidden name="userId"> [[${ans.UserId}]] </input>
+        <p style="font-weight:bold;margin-left:50px;">1번. 후회되는 일은 무엇인가요? 편하게 서술해주세요.</p>
+        <input textarea style="width:500px;height:100px;margin-left:50px;" name="answer1">[[${ans.answer1}]]</textarea>
+        </br>
+        </br>
+        <p style="font-weight:bold;margin-left:50px;">그 당시의 마음은 어땠나요?</p>
+        <input textarea style="width:500px;height:100px;margin-left:50px;" name="answer2">[[${ans.answer2}]]</textarea>
+        </br>
+        </br>
+        <p style="font-weight:bold;margin-left:50px;">다시 그 상황이 되면 어떻게 극복하고 싶으신가요?</p>
+        <input textarea style="width:500px;height:100px;margin-left:50px;" name="answer3">[[${ans.answer3}]]</textarea>
+        </br>
+        </br>
+        <p style="font-weight:bold;margin-left:50px;">극복하기 위해 필요한 건 무엇인가요?</p>
+        <input textarea style="width:500px;height:100px;margin-left:50px;" name="answer4">[[${ans.answer4}]]</textarea>
+        </br>
+        </br>
+        <p style="font-weight:bold;margin-left:50px;">당시의 나 자신에게 해주고 싶은 말은?</p>
+        <input textarea style="width:500px;height:100px;margin-left:50px;" name="answer5">[[${ans.answer5}]]</textarea>
+        </br>
+        </br>
+        <p style="font-weight:bold;margin-left:50px;">1번. 후회되는 일은 무엇인가요? 편하게 서술해주세요.</p>
+        <input textarea style="width:500px;height:100px;margin-left:50px;" name="answer6">[[${ans.answer6}]]</textarea>
+        </br>
+        </br>
+        <p style="font-weight:bold;margin-left:50px;">그 당시의 마음은 어땠나요?</p>
+        <input textarea style="width:500px;height:100px;margin-left:50px;" name="answer7">[[${ans.answer7}]]</textarea>
+        </br>
+        </br>
+        <p style="font-weight:bold;margin-left:50px;">다시 그 상황이 되면 어떻게 극복하고 싶으신가요?</p>
+        <input textarea style="width:500px;height:100px;margin-left:50px;" name="answer8"></textarea>
+        </br>
+        </br>
+        <p style="font-weight:bold;margin-left:50px;">극복하기 위해 필요한 건 무엇인가요?</p>
+        <input textarea style="width:500px;height:100px;margin-left:50px;" name="answer9"></textarea>
+        </br>
+        </br>
+        <p style="font-weight:bold;margin-left:50px;">당시의 나 자신에게 해주고 싶은 말은?</p>
+        <input textarea style="width:500px;height:100px;margin-left:50px;" name="answer10"></textarea>
+        </br>
+        </br>
+        <p style="font-weight:bold;margin-left:50px;">1번. 후회되는 일은 무엇인가요? 편하게 서술해주세요.</p>
+        <input textarea style="width:500px;height:100px;margin-left:50px;" name="answer11">[[$ans.answer1}]]</textarea>
+        </br>
+        </br>
+        <p style="font-weight:bold;margin-left:50px;">그 당시의 마음은 어땠나요?</p>
+        <input textarea style="width:500px;height:100px;margin-left:50px;" name="answer12"></textarea>
+        </br>
+        </br>
+        <p style="font-weight:bold;margin-left:50px;">다시 그 상황이 되면 어떻게 극복하고 싶으신가요?</p>
+        <input textarea style="width:500px;height:100px;margin-left:50px;" name="answer13"></textarea>
+        </br>
+        </br>
+        <p style="font-weight:bold;margin-left:50px;">극복하기 위해 필요한 건 무엇인가요?</p>
+        <input textarea style="width:500px;height:100px;margin-left:50px;" name="answer14"></textarea>
+        </br>
+        </br>
+        <p style="font-weight:bold;margin-left:50px;">당시의 나 자신에게 해주고 싶은 말은?</p>
+        <input textarea style="width:500px;height:100px;margin-left:50px;" name="answer15"></textarea>
+        </br>
+        </br>
+    <input type="submit" value="게시글수정" style="margin-left:500px;"/>
+    </form>
+    </th:block>
+
+</body>
+
+</html>

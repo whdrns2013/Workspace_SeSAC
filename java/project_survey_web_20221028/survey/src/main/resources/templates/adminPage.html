@@ -1,0 +1,42 @@
+<html>
+
+<body>
+
+    <head>
+        <p style="font-size:20; font-weight:bold;">관리자 페이지</strong>
+    </head>
+    <hr />
+
+    <table border="1">
+        <tr>
+            <td style="background-color:rgb(192, 192, 192)">ID</td>
+            <td style="background-color:rgb(192, 192, 192)">이름</td>
+            <td style="background-color:rgb(192, 192, 192)">성별</td>
+            <td style="background-color:rgb(192, 192, 192)">생년월일</td>
+        </tr>
+        <th:block th:each=" user : ${userList} ">
+            <tr>
+            <td><span>[[${user.userId}]]</span></td>
+            <td><span>[[${user.userName}]]</span></td>
+            <td><th:block th:if="${sexMale}==1 and ${sexFemale}==null">
+                남자
+                </th:block>
+                <th:block th:unless="${sexMale}==1 and ${sexFemale}==null">
+                여자
+                </th:block>
+                <th:block th:if="${sexMale}==1 and ${sexFemale}==1">
+                답변 오류
+                </th:block>
+                <th:block th:if="${sexMale}==null and ${sexFemale}==null">
+                답변 없음
+                </th:block>
+            </td>
+            <td><span>[[${user.birthDate}]]</span></td>
+            </tr>
+        </th:block>
+    </table>
+
+
+</body>
+
+</html>
