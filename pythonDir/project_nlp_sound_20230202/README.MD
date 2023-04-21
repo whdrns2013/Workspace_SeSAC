@@ -81,7 +81,8 @@
 
 ### 프로젝트 결론  
 
-음성 생성형 기술의 경우 자연어나 영상 기술과 비교했을 때 특히 도드라지는 점이 있습니다. 바로 사람이 직접 경험해보고 평가하는 게 필요한 기술이라는 것입니다.  
+음성 생성형 기술의 경우 자연어나 영상 기술과 비교했을 때 특히 도드라지는 점이 있습니다.  
+바로 사람이 직접 경험해보고 평가하는 게 필요한 기술이라는 것입니다.  
 
 
 ### 🔨 기술 스택  
@@ -93,7 +94,7 @@
 
 |팀원 1|팀원 2|팀원 3|팀원 4|
 |:---:|:---:|:---:|:---:|
-|<center><strong>박종혁</strong><br>* 플라스크 백엔드 구현<br>* 사투리 tts 플라스크 탑재</center>|<strong>윤율</strong><br>* 기획|<strong>심재훈</strong><br>* 사투리 tts 구현<br>* 자기 음성 tts 구현|<strong>손원준</strong><br>* ResNet 전이 학습|
+|<center><strong>박종혁</strong><br>* 플라스크 백엔드 구현<br>* 사투리 tts 플라스크 탑재</center>|<strong>윤율</strong><br>* 기획<br>* 프로젝트 매니징|<strong>심재훈</strong><br>* 사투리 tts 구현<br>* 자기 음성 tts 구현|<strong>손원준</strong><br>* 음성기술 원리 연구<br>* 데이터 관리|
 |whdrns2013@naver.com<br>[블로그](https://whdrns2013.github.io/)<br>[깃허브](https://github.com/whdrns2013/)|||
 
 <br>
