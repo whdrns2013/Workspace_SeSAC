@@ -75,8 +75,8 @@
 [발표를 대신 진행한 재훈봇 음성자료](./src/result/)  
 
 ### 4-2. Flask로 구축된 웹페이지  
-![](./src/images/image_02.png)  
-![](./src/images/image_03.png)  
+
+![](./src/images/image_09.png)  
 
 
 <br>
