@@ -10,8 +10,6 @@
 
 ## 1. 프로젝트 소개
 
-
-
 <br>
 
 ### ⚙️ 주요 기능  
@@ -22,21 +20,6 @@
 
 **자기 음성 TTS**  
 * 텍스트를 학습된 음성(자신 혹은 특정 타인의 음성 가능)으로 변환해주는 기능  
-
-<br>
-
-### ⚙️ 주요 기능 상세 소개  
-
-**1-1. 사투리 TTS**  
-
-
-**1-2. 사투리 TTS -> STT**  
-
-
-**2-1. 자기 음성 TTS**  
-
-
-
 
 <br>
 
@@ -90,10 +73,16 @@
 
 ## 4. 실행 결과  
 
-### 4-1. 사투리 tts  
+### 4-1. 사투리 tts 음성 결과  
 
 강원도  
 ![](./src/result/gangwon_human_destroying.wav)  
+
+### 4-2. 자기음성 tts 음성 결과  
+
+예시  
+![](./src/result/2.wav)
+
 
 
 <br>
@@ -103,20 +92,20 @@
 
 ### 프로젝트 결론  
 
-음성 기술, 그 중 생성형 기술의 경우 사람이 직접 경험해보고 평가하는 게 필요한 기술임을 알았습니다.  
-자연어나 영상 등 다른 기술도 그러하지만, 음성 기술은 특히 그런 면이 도드라지는 것 같습니다.  
+음성 기술, 그 중 생성형 기술의 경우 사람이 직접 경험해보고 평가하는 게 필요한 기술임을 알았습니다. 자연어나 영상 등 다른 기술도 그러하지만, 음성 기술은 특히 그런 면이 도드라집니다.  
 
-![](./src/images/image_07.png)
 
 ### 🔨 기술 스택  
 - Python 3.9.0  
+- Flask 2.2.2  
+- HTML5  
 
 ### 👥 팀 구성원
 
-|팀원 1|팀원 2|팀원 3|팀원 4|팀원 5|팀원 6|
-|:---:|:---:|:---:|:---:|:---:|:---:|
-|<center><strong>박종혁(팀장)</strong><br>* 이중 출력 모델 구축</center>|<strong>문병찬</strong><br>* Data Augment|<strong>진솔</strong><br>* 단일 출력 모델 구축|<strong>김성민</strong><br>* ResNet 전이 학습|<strong>손원준</strong><br>* 데이터수집<br>* 프로젝트 관리<br>* normalization|<strong>박기현</strong><br>* 이중 출력 모델 구축<br>* Callback 함수 적용|
-|whdrns2013@naver.com<br>[블로그](https://whdrns2013.github.io/)<br>[깃허브](https://github.com/whdrns2013/)||||||
+|팀원 1|팀원 2|팀원 3|팀원 4|
+|:---:|:---:|:---:|:---:|
+|<center><strong>박종혁</strong><br>* 플라스크 백엔드 구현<br>* 사투리 tts 플라스크 탑재</center>|<strong>윤율</strong><br>* 기획|<strong>심재훈</strong><br>* 사투리 tts 구현<br>* 자기 음성 tts 구현|<strong>손원준</strong><br>* ResNet 전이 학습|
+|whdrns2013@naver.com<br>[블로그](https://whdrns2013.github.io/)<br>[깃허브](https://github.com/whdrns2013/)|||
 
 <br>
 <br>
