@@ -98,7 +98,7 @@
 
 ### 3-2. 평균 문자 대상자 수 예측  
 
-**사용 모델 : Light GBN**  
+**사용 모델 : Light GBM**  
 ![](./src/images/image_14.png)
 
 **변수 선정**  
