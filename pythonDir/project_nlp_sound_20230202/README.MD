@@ -1,0 +1,122 @@
+# 사투리 TTS-STT 서비스, 자기 음성 TTS 서비스
+
+**뭐라카노 팀 : 윤율, 심재훈, 박종혁, 손원준**  
+
+
+![](./src/images/image_01.png)
+
+<br>
+<br>
+
+## 1. 프로젝트 소개
+
+
+
+<br>
+
+### ⚙️ 주요 기능  
+
+**사투리 TTS - STT**  
+* 텍스트를 강원도, 경상도, 전라도, 제주도, 충청도 사투리 음성으로 변환해주는 기능  
+* 음성으로 변환된 자료의 Sequence, Mel-Mpectogram 을 출력해주는 기능  
+
+**자기 음성 TTS**  
+* 텍스트를 학습된 음성(자신 혹은 특정 타인의 음성 가능)으로 변환해주는 기능  
+
+<br>
+
+### ⚙️ 주요 기능 상세 소개  
+
+**1-1. 사투리 TTS**  
+
+
+**1-2. 사투리 TTS -> STT**  
+
+
+**2-1. 자기 음성 TTS**  
+
+
+
+
+<br>
+
+### 📁 함께 보면 좋을 자료  
+
+* 발표자료 : [발표자료.pdf](./presentation_with_script.pdf)  
+* 프로젝트 계획서 : [프로젝트 계획서.pdf](./src/pm/plan.pdf)  
+
+<br>
+<br>
+
+## 2. 데이터셋 다운로드
+
+* 사투리(방언) 발화 음성 및 텍스트 데이터  
+[한국어 방언 발화(강원도)](https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=118)  
+[한국어 방언 발화(경상도)](https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=119)  
+[한국어 방언 발화(전라도)](https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=120)  
+[한국어 방언 발화(제주도)](https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=121)  
+[한국어 방언 발화(충청도)](https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=122)
+
+
+<br>
+<br>
+
+## 3. Train / Inference / 실행  
+
+### 3-1. 사투리 tts  
+
+자세한 사용법은 사투리 tts train README 파일을 참고해주세요.  
+
+[사투리 tts train](./satoori_tts_train/)  
+[사투리 tts train README](./satoori_tts_train/README.md)
+[사투리 tts 가상환경](./satoori_tts_train/satoori.yaml)
+
+### 3-2. 사투리 tts Flask Web  
+
+[사투리 tts Flask Web](./satoori_tts_web/)
+[사투리 tts Flask Web README](./satoori_tts_web/README.md)
+
+###  3-3. 자기음성 tts  
+
+자세한 사용법은 각 파일 주석을 참고해주세요  
+
+[자기음성 tts](./custom_tts/)  
+[(1)glow tts](./custom_tts/train-glowtts-v2.ipynb)  
+[(2)hifigan](./custom_tts/train_hifigan_v2.ipynb)  
+[(3)inference](./custom_tts/infer_v2.ipynb)  
+
+<br>
+<br>
+
+## 4. 실행 결과  
+
+### 4-1. 사투리 tts  
+
+강원도  
+![](./src/result/gangwon_human_destroying.wav)  
+
+
+<br>
+<br>
+
+## 5. 프로젝트를 마치며
+
+### 프로젝트 결론  
+
+음성 기술, 그 중 생성형 기술의 경우 사람이 직접 경험해보고 평가하는 게 필요한 기술임을 알았습니다.  
+자연어나 영상 등 다른 기술도 그러하지만, 음성 기술은 특히 그런 면이 도드라지는 것 같습니다.  
+
+![](./src/images/image_07.png)
+
+### 🔨 기술 스택  
+- Python 3.9.0  
+
+### 👥 팀 구성원
+
+|팀원 1|팀원 2|팀원 3|팀원 4|팀원 5|팀원 6|
+|:---:|:---:|:---:|:---:|:---:|:---:|
+|<center><strong>박종혁(팀장)</strong><br>* 이중 출력 모델 구축</center>|<strong>문병찬</strong><br>* Data Augment|<strong>진솔</strong><br>* 단일 출력 모델 구축|<strong>김성민</strong><br>* ResNet 전이 학습|<strong>손원준</strong><br>* 데이터수집<br>* 프로젝트 관리<br>* normalization|<strong>박기현</strong><br>* 이중 출력 모델 구축<br>* Callback 함수 적용|
+|whdrns2013@naver.com<br>[블로그](https://whdrns2013.github.io/)<br>[깃허브](https://github.com/whdrns2013/)||||||
+
+<br>
+<br>
