@@ -51,13 +51,11 @@
 자세한 사용법은 사투리 tts train README 파일을 참고해주세요.  
 
 [사투리 tts train](./satoori_tts_train/)  
-[사투리 tts train README](./satoori_tts_train/README.md)  
 [사투리 tts 가상환경](./satoori_tts_train/satoori.yaml)  
 
 ### 3-2. 사투리 tts Flask Web  
 
 [사투리 tts Flask Web](./satoori_tts_web/)  
-[사투리 tts Flask Web README](./satoori_tts_web/README.md)  
 
 ###  3-3. 자기음성 tts  
 
